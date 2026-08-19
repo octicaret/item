@@ -77,7 +77,7 @@ export const ItemAIFloatingWidget: React.FC = () => {
           <div className="bg-[#667AFA] p-4 text-white flex items-center justify-between">
             <div className="flex items-center space-x-2.5">
               <div className="w-8 h-8 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center font-bold p-0.5">
-                <img src="https://www.imghippo.com/i/TmQ7665ls.PNG" alt="Akıllı Asistan Logo" className="w-full h-full object-contain" />
+                <img src="/images/ai-logo.png" alt="Akıllı Asistan Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-sm flex items-center gap-1.5">
@@ -155,7 +155,7 @@ export const ItemAIFloatingWidget: React.FC = () => {
           className="block md:hidden bg-transparent border-none outline-none shadow-none p-0 rounded-none focus:outline-none hover:scale-105 active:scale-95 transition-all"
         >
           <img
-            src="https://i.ibb.co/TqM8kvpN/ai-logo.png"
+            src="/images/ai-logo.png"
             alt="Akıllı Asistan Logo"
             className="w-20 h-auto object-contain rounded-none border-none outline-none bg-transparent"
           />
@@ -168,7 +168,7 @@ export const ItemAIFloatingWidget: React.FC = () => {
           className="hidden md:block bg-transparent border-none outline-none shadow-none p-0 rounded-none focus:outline-none hover:scale-105 active:scale-95 transition-all"
         >
           <img
-            src="https://i.ibb.co/S40CmGqB/item-ai.png"
+            src="/images/ai-logo.png"
             alt="Akıllı Asistan Logo"
             className="w-[202px] h-auto object-contain rounded-none border-none outline-none bg-transparent"
           />

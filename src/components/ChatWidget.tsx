@@ -16,6 +16,13 @@ export const ChatWidget: React.FC = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (isOpen) {
+      localStorage.setItem('support_popup_resolved', 'true');
+      window.dispatchEvent(new CustomEvent('chatWasOpened')); // Notify popup to close
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
     // Generate or retrieve anonymous user ID
     let storedUserId = localStorage.getItem('anon_chat_id');
     if (!storedUserId) {

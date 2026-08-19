@@ -32,7 +32,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
         {/* Header */}
         <div className="text-center mb-6">
           <img
-            src="https://i.ibb.co/JWqrFPYw/31.png"
+            src="/images/main-logo.png"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
             }}

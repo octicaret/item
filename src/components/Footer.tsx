@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-2">
               <a href="/">
                 <img
-                  src="https://i.ibb.co/JWqrFPYw/31.png"
+                  src="/images/main-logo.png"
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
                   }}
