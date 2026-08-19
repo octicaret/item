@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import mainLogo from '../assets/main-logo.png';
 
 export const SupportPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +72,7 @@ export const SupportPopup: React.FC = () => {
         <div className="flex flex-col items-center p-8 text-center">
           {/* Site Logo */}
           <img 
-            src="/images/main-logo.png" 
+            src={mainLogo} 
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
             }}

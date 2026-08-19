@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, User, ShoppingCart, Bell, Sparkles, Menu, X, Globe, MessageSquare, Wallet } from 'lucide-react';
 import { PlatformIcon } from './PlatformIcon';
+import mainLogo from '../assets/main-logo.png';
 
 interface HeaderProps {
   onProfileClick: () => void;
@@ -68,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
                 className="flex items-center space-x-1.5"
               >
                 <img
-                  src="/images/main-logo.png"
+                  src={mainLogo}
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
                   }}
@@ -157,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="flex items-center space-x-2 group"
             >
               <img
-                src="/images/main-logo.png"
+                src={mainLogo}
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
                 }}
