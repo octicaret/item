@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Lock, Headphones, CreditCard } from 'lucide-react';
 import { PlatformIcon } from './PlatformIcon';
-import mainLogo from '../assets/main-logo.png';
+import { mainLogoBase64 } from '../assets/logos';
 
 export const Footer: React.FC = () => {
   return (
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-2">
               <a href="/">
                 <img
-                  src={mainLogo}
+                  src={mainLogoBase64}
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
                   }}

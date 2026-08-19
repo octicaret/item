@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { X, User, Lock, Mail, ArrowRight } from 'lucide-react';
-import mainLogo from '../assets/main-logo.png';
+import { mainLogoBase64 } from '../assets/logos';
 
 interface LoginModalProps {
   isOpen: boolean;
@@ -33,7 +33,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
         {/* Header */}
         <div className="text-center mb-6">
           <img
-            src={mainLogo}
+            src={mainLogoBase64}
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src = '/images/logo.png';
             }}
