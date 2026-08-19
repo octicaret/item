@@ -14,6 +14,8 @@ export const ChatWidget: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const lastUpdateIdRef = useRef(0);
+  const sessionStartTime = useRef(Math.floor(Date.now() / 1000));
 
   useEffect(() => {
     if (isOpen) {
@@ -115,20 +117,45 @@ export const ChatWidget: React.FC = () => {
 
     const pollMessages = async () => {
       try {
-        const res = await fetch(`/api/chat?userId=${userId}`);
+        const token = '8655258410:AAG6eodH98W_N_efElBatfVsNZr8mZ6oDuE';
+        const res = await fetch(`https://api.telegram.org/bot${token}/getUpdates`);
         const data = await res.json();
         
-        if (data.messages && data.messages.length > 0) {
-          setMessages(prev => {
-            const newMsgs = [...prev];
-            data.messages.forEach((msg: any) => {
-              newMsgs.push({
-                text: msg.text,
-                sender: 'admin',
-                timestamp: msg.timestamp || new Date().toISOString(),
-              });
-            });
-            return newMsgs;
+        if (data.ok && data.result) {
+          data.result.forEach((update: any) => {
+            const msg = update.message;
+            if (msg && msg.text && update.update_id > lastUpdateIdRef.current) {
+              lastUpdateIdRef.current = Math.max(lastUpdateIdRef.current, update.update_id);
+              
+              if (msg.date < sessionStartTime.current) return; // Skip old messages
+              
+              let isForMe = false;
+              let replyText = null;
+              
+              if (msg.reply_to_message && msg.reply_to_message.text) {
+                const match = msg.reply_to_message.text.match(/^#([^:]+):/);
+                if (match && match[1] === userId) {
+                  isForMe = true;
+                  replyText = msg.text;
+                }
+              }
+              
+              if (!isForMe) {
+                const manualMatch = msg.text.match(/^#([^:]+):\s*(.*)/);
+                if (manualMatch && manualMatch[1] === userId) {
+                  isForMe = true;
+                  replyText = manualMatch[2];
+                }
+              }
+              
+              if (isForMe && replyText) {
+                setMessages(prev => [...prev, {
+                  text: replyText as string,
+                  sender: 'admin',
+                  timestamp: new Date(msg.date * 1000).toISOString()
+                }]);
+              }
+            }
           });
         }
       } catch (err) {
@@ -159,10 +186,14 @@ export const ChatWidget: React.FC = () => {
     setIsTyping(true);
 
     try {
-      await fetch('/api/chat', {
+      const token = '8655258410:AAG6eodH98W_N_efElBatfVsNZr8mZ6oDuE';
+      const chatId = '2046691604';
+      const text = `#${userId}: ${newMsg.text}`;
+      
+      await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId, message: newMsg.text }),
+        body: JSON.stringify({ chat_id: chatId, text })
       });
     } catch (err) {
       console.error('Failed to send message:', err);
