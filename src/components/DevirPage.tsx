@@ -21,7 +21,7 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
     window.dispatchEvent(new CustomEvent('openChat', { detail: { title } }));
   };
 
-  const profileBannerUrl = "https://cdn.itemsatis.com/cover/global/profileBanner-1.png";
+  const profileBannerUrl = "https://cdn.itemsatis.com/cover/global/Wallpaper1.png";
 
   return (
     <div className="min-h-screen bg-[#141724] text-gray-100 font-sans selection:bg-[#8b5cf6] selection:text-white flex flex-col justify-between">
@@ -63,17 +63,17 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
         <div className="relative flex flex-col items-center mt-[35px] px-4">
           <div className="w-28 h-28 rounded-3xl border-4 border-[#1e1f29] bg-white overflow-hidden shadow-lg z-10">
             <img 
-              src="https://cdn.itemsatis.com/avatar/global/gta-erkek.png" 
+              src="https://cdn.itemsatis.com/avatar/global/messi.png" 
               alt="Avatar" 
               className="w-full h-full object-cover"
             />
           </div>
           
           <div className="flex items-center gap-3 mt-3">
-            <span className="text-white font-bold text-base tracking-wide">ggStormSniper5620</span>
+            <span className="text-white font-bold text-base tracking-wide">mertobaba</span>
             <div className="flex rounded-md overflow-hidden text-xs font-bold shadow-sm">
               <div className="bg-indigo-600 px-2 py-0.5 text-white">LEVEL</div>
-              <div className="bg-black px-2 py-0.5 text-white">3</div>
+              <div className="bg-black px-2 py-0.5 text-white">4</div>
             </div>
             
             <div className="flex items-center">
@@ -153,14 +153,14 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
 
         {/* 1. Product Cards Grid (Two-Columns) */}
         <div className="grid grid-cols-2 gap-3 px-4 py-4 mt-2">
-          {/* Card A (Left: Brawl Stars Account) */}
+          {/* Card A (Left: Valorant Account) */}
           <div 
-            onClick={() => handleListingClick('İlk Sahibi | Valorant TR Hesabı | Plat (Eski Sez')}
+            onClick={() => handleListingClick('DOLU SAĞLAM HESAP KAÇMAZ!! PAZARLIK VAR')}
             className="bg-[#1b1f32] border border-[#2a2f4a] rounded-2xl overflow-hidden flex flex-col shadow-lg cursor-pointer transition-transform active:scale-95"
           >
             <div className="w-full aspect-[16/10] overflow-hidden bg-[#2a2f4a] relative">
               <img 
-                src="https://cdn.itemsatis.com/uploads/post_images/ilk-sahibi-valorant-tr-hesabi-plat-eski-se-51465378.png" 
+                src="https://cdn.itemsatis.com/uploads/post_images/champions-2024-phantom-premium-skinli-hesap-31115295.png" 
                 alt="Valorant Hesap" 
                 className="w-full h-full object-cover" 
               />
@@ -175,9 +175,30 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
             <div className="p-3">
               <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
               <div className="text-xs font-bold text-white uppercase leading-snug line-clamp-2 h-8 mb-3">
-                İlk Sahibi | Valorant TR Hesabı | Plat (Eski Sez
+                DOLU SAĞLAM HESAP KAÇMAZ!! PAZARLIK VAR
               </div>
-              <div className="text-sm font-black text-[#ffb800]">6.500,00 tl</div>
+              <div className="text-sm font-black text-[#ffb800]">4.350,00 ₺</div>
+            </div>
+          </div>
+          
+          {/* Card B (Right: New Valorant Account) */}
+          <div 
+            onClick={() => handleListingClick('ULUPENÇE VANDAL RGX KARAMBİT UYGUN FİYATLI!')}
+            className="bg-[#1b1f32] border border-[#2a2f4a] rounded-2xl overflow-hidden flex flex-col shadow-lg cursor-pointer transition-transform active:scale-95"
+          >
+            <div className="w-full aspect-[16/10] overflow-hidden bg-[#2a2f4a] relative">
+              <img 
+                src="https://cdn.itemsatis.com/uploads/post_images/ulupence-vandal-rgx-karambit-uygun-fiyatli-2878282.png" 
+                alt="Valorant Hesap" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="p-3">
+              <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
+              <div className="text-xs font-bold text-white uppercase leading-snug line-clamp-2 h-8 mb-3">
+                ULUPENÇE VANDAL RGX KARAMBİT UYGUN FİYATLI!
+              </div>
+              <div className="text-sm font-black text-[#ffb800]">1.800,00 ₺</div>
             </div>
           </div>
         </div>
@@ -266,7 +287,7 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
                 <span className="w-3.5 h-3.5 bg-[#4c4962] text-white rounded flex items-center justify-center text-[9px]">
                   <Square className="w-2 h-2" />
                 </span>
-                <span>Üyelik Tarihi: <strong className="text-gray-300 font-normal">29 kasım 2025</strong></span>
+                <span>Üyelik Tarihi: <strong className="text-gray-300 font-normal">12 nisan 2021</strong></span>
               </div>
             </div>
             
@@ -278,7 +299,7 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
                 {/* Profile Avatar Box */}
                 <div className="w-24 h-24 sm:w-28 sm:h-28 bg-[#f0f3f8] rounded-xl flex-shrink-0 border-2 border-[#232232] overflow-hidden">
                   <img 
-                    src="https://cdn.itemsatis.com/avatar/global/gta-erkek.png" 
+                    src="https://cdn.itemsatis.com/avatar/global/messi.png" 
                     alt="Avatar" 
                     className="w-full h-full object-cover"
                   />
@@ -288,12 +309,12 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
                 <div className="flex flex-col space-y-2">
                   {/* Username Row */}
                   <div className="flex flex-wrap items-center gap-3">
-                    <h1 className="text-xl sm:text-2xl font-bold text-white tracking-wide">ggStormSniper5620</h1>
+                    <h1 className="text-xl sm:text-2xl font-bold text-white tracking-wide">mertobaba</h1>
                     
                     {/* Level Badge */}
                     <div className="flex items-center bg-[#524be3] text-white text-[11px] font-bold px-2 py-0.5 rounded-md space-x-1">
                       <span>LEVEL</span>
-                      <span className="bg-[#3833a0] text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px]">3</span>
+                      <span className="bg-[#3833a0] text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px]">4</span>
                     </div>
                     
                     {/* Online Indicator */}
@@ -499,35 +520,52 @@ export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
 
           {/* Center Grid (Main Content) */}
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-start content-start">
-            {[1].map((i) => (
-              <article 
-                key={i} 
-                onClick={() => handleListingClick('İlk Sahibi | Valorant TR Hesabı | Plat (Eski Sez')}
-                className="flex flex-col bg-[#2a2936] rounded-2xl overflow-hidden shadow-lg border border-[#2a2936] transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
-              >
-                <div className="w-full h-36 sm:h-40 overflow-hidden bg-[#2a2f4a] relative">
-                  <img 
-                    src="https://cdn.itemsatis.com/uploads/post_images/ilk-sahibi-valorant-tr-hesabi-plat-eski-se-51465378.png" 
-                    alt="Valorant Hesap" 
-                    className="w-full h-full object-cover" 
-                  />
-                  <div className="absolute inset-0 bg-red-500/5 mix-blend-overlay"></div>
-                  <div className="absolute inset-0 bg-[#ff0000] opacity-5"></div>
-                  <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <div className="border-2 border-red-500 text-red-500 text-xs font-bold px-3 py-1.5 text-center bg-[#2a2936]/90 shadow-lg">
-                      satış işlemi bekleniyor
-                    </div>
+            <article 
+              onClick={() => handleListingClick('DOLU SAĞLAM HESAP KAÇMAZ!! PAZARLIK VAR')}
+              className="flex flex-col bg-[#2a2936] rounded-2xl overflow-hidden shadow-lg border border-[#2a2936] transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+            >
+              <div className="w-full h-36 sm:h-40 overflow-hidden bg-[#2a2f4a] relative">
+                <img 
+                  src="https://cdn.itemsatis.com/uploads/post_images/champions-2024-phantom-premium-skinli-hesap-31115295.png" 
+                  alt="Valorant Hesap" 
+                  className="w-full h-full object-cover" 
+                />
+                <div className="absolute inset-0 bg-red-500/5 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[#ff0000] opacity-5"></div>
+                <div className="absolute inset-0 flex items-center justify-center p-4">
+                  <div className="border-2 border-red-500 text-red-500 text-xs font-bold px-3 py-1.5 text-center bg-[#2a2936]/90 shadow-lg">
+                    satış işlemi bekleniyor
                   </div>
                 </div>
-                <div className="p-4 flex flex-col bg-[#2a2936]">
-                  <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
-                  <div className="text-sm font-bold text-white uppercase leading-snug line-clamp-2 h-10 mb-2">
-                    İlk Sahibi | Valorant TR Hesabı | Plat (Eski Sez
-                  </div>
-                  <span className="text-sm font-bold text-[#dfa841]">6.500,00 tl</span>
+              </div>
+              <div className="p-4 flex flex-col bg-[#2a2936]">
+                <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
+                <div className="text-sm font-bold text-white uppercase leading-snug line-clamp-2 h-10 mb-2">
+                  DOLU SAĞLAM HESAP KAÇMAZ!! PAZARLIK VAR
                 </div>
-              </article>
-            ))}
+                <span className="text-sm font-bold text-[#dfa841]">4.350,00 ₺</span>
+              </div>
+            </article>
+
+            <article 
+              onClick={() => handleListingClick('ULUPENÇE VANDAL RGX KARAMBİT UYGUN FİYATLI!')}
+              className="flex flex-col bg-[#2a2936] rounded-2xl overflow-hidden shadow-lg border border-[#2a2936] transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+            >
+              <div className="w-full h-36 sm:h-40 overflow-hidden bg-[#2a2f4a] relative">
+                <img 
+                  src="https://cdn.itemsatis.com/uploads/post_images/ulupence-vandal-rgx-karambit-uygun-fiyatli-2878282.png" 
+                  alt="Valorant Hesap" 
+                  className="w-full h-full object-cover" 
+                />
+              </div>
+              <div className="p-4 flex flex-col bg-[#2a2936]">
+                <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
+                <div className="text-sm font-bold text-white uppercase leading-snug line-clamp-2 h-10 mb-2">
+                  ULUPENÇE VANDAL RGX KARAMBİT UYGUN FİYATLI!
+                </div>
+                <span className="text-sm font-bold text-[#dfa841]">1.800,00 ₺</span>
+              </div>
+            </article>
           </div>
 
         </div>
