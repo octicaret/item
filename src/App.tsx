@@ -104,8 +104,8 @@ export default function App() {
     });
   }, [listings, searchQuery, activeFilter, selectedCategory, selectedTag]);
 
-  // If path is /profile, render the profile page instead
-  if (currentPath === '/profile') {
+  // If path is /devir, render the profile page instead
+  if (currentPath === '/devir') {
     return <ProfilePage onNavigateHome={() => navigateTo('/')} />;
   }
 
@@ -125,7 +125,7 @@ export default function App() {
 
         {/* Main Header & Search */}
         <Header
-          onProfileClick={() => navigateTo('/profile')}
+          onProfileClick={() => navigateTo('/devir')}
           onOpenAddListing={() => setIsAddListingOpen(true)}
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}

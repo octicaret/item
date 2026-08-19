@@ -63,17 +63,17 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
         <div className="relative flex flex-col items-center mt-[35px] px-4">
           <div className="w-28 h-28 rounded-3xl border-4 border-[#1e1f29] bg-white overflow-hidden shadow-lg z-10">
             <img 
-              src="https://cdn.itemsatis.com/avatar/global/Avatar38.png" 
+              src="https://cdn.itemsatis.com/avatar/global/lastofus-erkek.png" 
               alt="Avatar" 
               className="w-full h-full object-cover"
             />
           </div>
           
           <div className="flex items-center gap-3 mt-3">
-            <span className="text-white font-bold text-base tracking-wide">serhatsng34</span>
+            <span className="text-white font-bold text-base tracking-wide">mustafacan26</span>
             <div className="flex rounded-md overflow-hidden text-xs font-bold shadow-sm">
               <div className="bg-indigo-600 px-2 py-0.5 text-white">LEVEL</div>
-              <div className="bg-black px-2 py-0.5 text-white">8</div>
+              <div className="bg-black px-2 py-0.5 text-white">2</div>
             </div>
             
             <div className="flex items-center">
@@ -155,13 +155,13 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
         <div className="grid grid-cols-2 gap-3 px-4 py-4 mt-2">
           {/* Card A (Left: Brawl Stars Account) */}
           <div 
-            onClick={() => handleListingClick('DOPDOLU BRAWL STARS HESABI!!!!!')}
+            onClick={() => handleListingClick('valorant hesap')}
             className="bg-[#1b1f32] border border-[#2a2f4a] rounded-2xl overflow-hidden flex flex-col shadow-lg cursor-pointer transition-transform active:scale-95"
           >
             <div className="w-full aspect-[16/10] overflow-hidden bg-[#2a2f4a] relative">
               <img 
-                src="https://cdn.itemsatis.com/uploads/post_images/dopdolu-brawl-stars-hesabi-97868149.png" 
-                alt="Brawl Stars" 
+                src="https://cdn.itemsatis.com/uploads/post_images/valorant-hesap-72794990.png" 
+                alt="Valorant Hesap" 
                 className="w-full h-full object-cover" 
               />
               <div className="absolute inset-0 bg-red-500/5 mix-blend-overlay"></div>
@@ -173,11 +173,11 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
               </div>
             </div>
             <div className="p-3">
-              <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">BRAWL STARS</div>
+              <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
               <div className="text-xs font-bold text-white uppercase leading-snug line-clamp-2 h-8 mb-3">
-                DOPDOLU BRAWL STARS HESABI!!!!!
+                valorant hesap
               </div>
-              <div className="text-sm font-black text-[#ffb800]">3000,00 tl</div>
+              <div className="text-sm font-black text-[#ffb800]">3300,00 TL</div>
             </div>
           </div>
         </div>
@@ -251,7 +251,7 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
           {/* 1. Cover Banner */}
           <div className="w-full h-52 sm:h-64 bg-[#f0f3f8] transition-all relative">
             <img 
-              src={profileBannerUrl} 
+              src="https://cdn.itemsatis.com/cover/global/Wallpaper1.png" 
               alt="Cover" 
               className="w-full h-full object-cover"
             />
@@ -266,7 +266,7 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
                 <span className="w-3.5 h-3.5 bg-[#4c4962] text-white rounded flex items-center justify-center text-[9px]">
                   <Square className="w-2 h-2" />
                 </span>
-                <span>Üyelik Tarihi: <strong className="text-gray-300 font-normal">5 nisan 2024</strong></span>
+                <span>Üyelik Tarihi: <strong className="text-gray-300 font-normal">19 Ağustos 2026</strong></span>
               </div>
             </div>
             
@@ -278,7 +278,7 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
                 {/* Profile Avatar Box */}
                 <div className="w-24 h-24 sm:w-28 sm:h-28 bg-[#f0f3f8] rounded-xl flex-shrink-0 border-2 border-[#232232] overflow-hidden">
                   <img 
-                    src="https://cdn.itemsatis.com/avatar/global/Avatar38.png" 
+                    src="https://cdn.itemsatis.com/avatar/global/lastofus-erkek.png" 
                     alt="Avatar" 
                     className="w-full h-full object-cover"
                   />
@@ -288,12 +288,12 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
                 <div className="flex flex-col space-y-2">
                   {/* Username Row */}
                   <div className="flex flex-wrap items-center gap-3">
-                    <h1 className="text-xl sm:text-2xl font-bold text-white tracking-wide">serhatsng34</h1>
+                    <h1 className="text-xl sm:text-2xl font-bold text-white tracking-wide">mustafacan26</h1>
                     
                     {/* Level Badge */}
                     <div className="flex items-center bg-[#524be3] text-white text-[11px] font-bold px-2 py-0.5 rounded-md space-x-1">
                       <span>LEVEL</span>
-                      <span className="bg-[#3833a0] text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px]">8</span>
+                      <span className="bg-[#3833a0] text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px]">2</span>
                     </div>
                     
                     {/* Online Indicator */}
@@ -436,17 +436,7 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
                     </div>
                     <span className="text-sm text-gray-300">Valorant</span>
                   </div>
-                  <span className="bg-[#252431] text-xs text-gray-400 px-2.5 py-0.5 rounded-full">0</span>
-                </div>
-                {/* Brawl Stars Item */}
-                <div className="flex items-center justify-between py-2 px-1 hover:bg-[#232233]/50 rounded-lg transition-colors cursor-pointer">
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full overflow-hidden bg-purple-500/20">
-                      <img src="https://i.ibb.co/WWcvW7zX/brawl-stars-logo-brawl-stars-icon-transparent-free-png.webp" className="w-full h-full object-cover" alt="Brawl Stars" />
-                    </div>
-                    <span className="text-sm text-gray-300">Brawl Stars</span>
-                  </div>
-                  <span className="bg-[#252431] text-xs text-gray-400 px-2.5 py-0.5 rounded-full">0</span>
+                  <span className="bg-[#252431] text-xs text-gray-400 px-2.5 py-0.5 rounded-full">1</span>
                 </div>
               </div>
             </div>
@@ -512,13 +502,13 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
             {[1].map((i) => (
               <article 
                 key={i} 
-                onClick={() => handleListingClick('DOPDOLU BRAWL STARS HESABI!!!!!')}
+                onClick={() => handleListingClick('valorant hesap')}
                 className="flex flex-col bg-[#2a2936] rounded-2xl overflow-hidden shadow-lg border border-[#2a2936] transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
               >
                 <div className="w-full h-36 sm:h-40 overflow-hidden bg-[#2a2f4a] relative">
                   <img 
-                    src="https://cdn.itemsatis.com/uploads/post_images/dopdolu-brawl-stars-hesabi-97868149.png" 
-                    alt="Brawl Stars" 
+                    src="https://cdn.itemsatis.com/uploads/post_images/valorant-hesap-72794990.png" 
+                    alt="Valorant Hesap" 
                     className="w-full h-full object-cover" 
                   />
                   <div className="absolute inset-0 bg-red-500/5 mix-blend-overlay"></div>
@@ -530,11 +520,11 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
                   </div>
                 </div>
                 <div className="p-4 flex flex-col bg-[#2a2936]">
-                  <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">BRAWL STARS</div>
+                  <div className="text-[10px] font-bold tracking-wider text-[#79809c] mb-1.5 text-left">VALORANT</div>
                   <div className="text-sm font-bold text-white uppercase leading-snug line-clamp-2 h-10 mb-2">
-                    DOPDOLU BRAWL STARS HESABI!!!!!
+                    valorant hesap
                   </div>
-                  <span className="text-sm font-bold text-[#dfa841]">3000,00 tl</span>
+                  <span className="text-sm font-bold text-[#dfa841]">3300,00 TL</span>
                 </div>
               </article>
             ))}
