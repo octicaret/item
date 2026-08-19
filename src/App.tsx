@@ -27,6 +27,7 @@ export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
   useEffect(() => {
+    document.title = "İtem Satış | Türkiye'nin En Güvenilir Satış Platformu";
     const handlePopState = () => setCurrentPath(window.location.pathname);
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
