@@ -158,7 +158,8 @@ export const ItemAIFloatingWidget: React.FC = () => {
           <img
             src={aiLogoBase64}
             alt="Akıllı Asistan Logo"
-            className="w-20 h-auto object-contain rounded-none border-none outline-none bg-transparent"
+            style={{ width: '140px', height: '50px' }}
+            className="object-contain rounded-none border-none outline-none bg-transparent"
           />
         </button>
 
