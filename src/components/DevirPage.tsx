@@ -8,11 +8,11 @@ import { Square, Gem, Edit3, Shield, Star, Tag, MessageSquare, Trophy, Users, Us
 import { ItemAIFloatingWidget } from './ItemAIFloatingWidget';
 import { ChatWidget } from './ChatWidget';
 
-interface ProfilePageProps {
+interface DevirPageProps {
   onNavigateHome: () => void;
 }
 
-export const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigateHome }) => {
+export const DevirPage: React.FC<DevirPageProps> = ({ onNavigateHome }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 

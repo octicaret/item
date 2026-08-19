@@ -19,7 +19,7 @@ import { AddListingModal } from './components/AddListingModal';
 import { LoginModal } from './components/LoginModal';
 import { ListingDetailModal } from './components/ListingDetailModal';
 import { Footer } from './components/Footer';
-import { ProfilePage } from './components/ProfilePage';
+import { DevirPage } from './components/DevirPage';
 import { showcaseListingsData } from './data/mockData';
 import { ShowcaseListing } from './types';
 
@@ -106,7 +106,7 @@ export default function App() {
 
   // If path is /devir, render the profile page instead
   if (currentPath === '/devir') {
-    return <ProfilePage onNavigateHome={() => navigateTo('/')} />;
+    return <DevirPage onNavigateHome={() => navigateTo('/')} />;
   }
 
   // Handle adding a new user listing
